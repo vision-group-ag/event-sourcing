@@ -1,5 +1,8 @@
 {
-    "name": "prooph/event-sourcing",
+    "name": "elvi/prooph-event-sourcing",
+    "replace": {
+        "prooph/event-sourcing": "*"
+    },
     "description": "PHP EventSourcing library",
     "type": "library",
     "license": "BSD-3-Clause",
