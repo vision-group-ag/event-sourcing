@@ -20,12 +20,12 @@ use Prooph\EventStore\EventStore;
 use Prooph\EventStore\Exception\ConfigurationException;
 use ProophTest\EventSourcing\Mock\EventStoreMock;
 use ProophTest\EventSourcing\Mock\RepositoryMock;
-use ProophTest\EventStore\ActionEventEmitterEventStoreTestCase;
+use ProophTest\EventStore\AbstractActionEventEmitterEventStoreTestCase;
 use ProophTest\EventStore\Mock\User;
 use Prophecy\PhpUnit\ProphecyTrait;
 use Psr\Container\ContainerInterface;
 
-class AggregateRepositoryFactoryTest extends ActionEventEmitterEventStoreTestCase
+class AggregateRepositoryFactoryTest extends AbstractActionEventEmitterEventStoreTestCase
 {
     use ProphecyTrait;
 

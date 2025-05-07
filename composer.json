@@ -28,7 +28,7 @@
     "require-dev": {
         "psr/container": "^1.0",
         "sandrokeil/interop-config": "^2.0.1",
-        "phpunit/phpunit": "^9.3",
+        "phpunit/phpunit": "^10",
         "prooph/snapshot-store": "^1.2.0",
         "prooph/php-cs-fixer-config": "^0.4",
         "phpspec/prophecy": "^1.9",

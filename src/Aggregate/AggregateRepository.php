@@ -51,7 +51,7 @@ class AggregateRepository
     protected $snapshotStore;
 
     /**
-     * @var StreamName
+     * @var StreamName|null
      */
     protected $streamName;
 
@@ -74,8 +74,8 @@ class AggregateRepository
         EventStore $eventStore,
         AggregateType $aggregateType,
         AggregateTranslator $aggregateTranslator,
-        SnapshotStore $snapshotStore = null,
-        StreamName $streamName = null,
+        ?SnapshotStore $snapshotStore = null,
+        ?StreamName $streamName = null,
         bool $oneStreamPerAggregate = false,
         bool $disableIdentityMap = false,
         array $metadata = []

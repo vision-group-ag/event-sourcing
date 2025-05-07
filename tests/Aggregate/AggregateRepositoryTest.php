@@ -32,12 +32,12 @@ use Prooph\SnapshotStore\SnapshotStore;
 use ProophTest\EventSourcing\Mock\User;
 use ProophTest\EventSourcing\Mock\UserCreated;
 use ProophTest\EventSourcing\Mock\UsernameChanged;
-use ProophTest\EventStore\ActionEventEmitterEventStoreTestCase;
+use ProophTest\EventStore\AbstractActionEventEmitterEventStoreTestCase;
 use Prophecy\Argument;
 use Prophecy\PhpUnit\ProphecyTrait;
 use ReflectionClass;
 
-class AggregateRepositoryTest extends ActionEventEmitterEventStoreTestCase
+class AggregateRepositoryTest extends AbstractActionEventEmitterEventStoreTestCase
 {
     use ProphecyTrait;
 
